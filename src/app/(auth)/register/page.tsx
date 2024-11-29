@@ -30,7 +30,7 @@ const SignInPage = () => {
                 <InputField name='password' type='password' label='Password' />
                 <InputField name='confirmPassword' type='password' label='Confirm Password' />
               </div>
-              <p className='text-sm text-gray-500'>Already have an account? <Link href="/" className='text-blue-500'>Login</Link></p>
+              <p className='text-sm text-gray-500'>Already have an account? <Link href="/login" className='text-blue-500'>Login</Link></p>
               <div className="flex justify-end">
                 <Button>Submit</Button>
               </div>
