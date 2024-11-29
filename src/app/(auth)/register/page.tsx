@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
-const SignInPage = () => {
+const RegisterPage = () => {
   const { form, submit } = useRegisterForm()
 
   return (
@@ -42,4 +42,4 @@ const SignInPage = () => {
   )
 }
 
-export default SignInPage
+export default RegisterPage

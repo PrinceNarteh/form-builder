@@ -8,7 +8,7 @@ import { InputField } from '@/components/templates/InputField'
 import { useLoginForm } from '@/app/(auth)/login/_hooks/useLoginForm'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
-const SignInPage = () => {
+const LoginPage = () => {
   const { form, submit } = useLoginForm()
 
   return (
@@ -35,4 +35,4 @@ const SignInPage = () => {
   )
 }
 
-export default SignInPage
+export default LoginPage
