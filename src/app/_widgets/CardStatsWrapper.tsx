@@ -1,7 +1,7 @@
-import { getFormStats } from "@/actions/form";
+import { GetFormStats } from "@/actions/form";
 import { StatsCardList } from "./StatsCardList";
 
 export async function CardStatsWrapper() {
-  const stats = await getFormStats();
+  const stats = await GetFormStats();
   return <StatsCardList loading={false} data={stats} />;
 }

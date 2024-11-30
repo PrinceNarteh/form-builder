@@ -13,20 +13,20 @@ import { Button } from '../ui/button';
 interface DialogTemplateProps {
   open?: boolean
   onOpenChange?: (open: boolean) => void
-  btnLabel?: string
+  triggerBtn?: React.ReactNode
   title?: string
   description?: string
   content: React.ReactNode
   footer?: React.ReactNode
 }
 
-export const DialogTemplate = ({ title, description, footer, open, content, onOpenChange, btnLabel }: DialogTemplateProps) => {
+export const DialogTemplate = ({ title, description, footer, open, content, onOpenChange, triggerBtn }: DialogTemplateProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       {
-        btnLabel && (
+        triggerBtn && (
           <DialogTrigger asChild>
-            <Button>{btnLabel}</Button>
+            {triggerBtn}
           </DialogTrigger>
         )
       }
